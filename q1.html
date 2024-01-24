@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hazara</title>
+</head>
+<body>
+    
+    <script>
+
+        const x = 1
+        // x++ // Error
+        //x = 2; // Error
+
+        const arr = [1, 4, 6, 8]
+        // arr = [] // Error
+        arr.push(10) // Ok
+        arr.pop() // Ok
+        arr[0] = 100
+        // arr = 1 // Error
+
+        function add(y) {
+            y++
+            return y
+        }
+        let y = 12
+        y = add(y)
+        console.log(y); // 12
+
+        function arr_number(arr2) {
+            arr2.push(100)
+        }
+        const arr2 = [1, 2, 3]
+        arr_number(arr2)
+        console.log(arr2); // [1, 2, 3, 100]
+
+/*
+        <h1>Hi</h1>
+        <table>
+                <tr>
+                    <th>ID</th>
+                </tr>
+        </table>
+*/
+
+    </script>
+</body>
+</html>

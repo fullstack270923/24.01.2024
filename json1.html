@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Json1</title>
+</head>
+
+<body>
+    <script>
+
+        const details = {
+            "id": "0335A1B2C3",
+            "fname": "Moshe",
+            "lname": "Cohen",
+            "ph": "972-508456780",
+            "veg": true,
+            "address": {
+                "country": "USA",
+                "city": "New York",
+                "street": "5th Avenue",
+                "number": 101,
+                "zipcode": "10001"
+            },
+            "schools": ["Ort Technical Institute", "Amit Science School"],
+            "kids": ["Alice", "Bob"],
+            "games": ["Chess", "Monopoly"]
+        }
+        document.write(JSON.stringify(details))
+        console.log(details);
+
+    </script>
+</body>
+
+</html>
