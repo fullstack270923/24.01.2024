@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Errors</title>
+</head>
+
+<body>
+    <script>
+
+        function print_upper_case_of_second_item(arr) {
+            try {
+                console.log(arr[1].toUpperCase());
+            }
+            catch (e) {
+                //alert('No interent')
+                console.error(`Error occured but catched -- ${e}`);
+                console.log('Error has occured!');
+            }
+            
+        }
+
+        print_upper_case_of_second_item(['abc', 'ddr'])
+        print_upper_case_of_second_item(['abc'])
+        print_upper_case_of_second_item(['abc', 'dda', 'kko']) // no
+
+
+
+    </script>
+</body>
+
+</html>
